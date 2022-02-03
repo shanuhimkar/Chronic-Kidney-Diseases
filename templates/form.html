@@ -1,0 +1,228 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class='container'>
+     <h2>{{ form_title }}</h2>
+</div>
+<div class='container'>
+    <form method="POST" action='/analyse' role='form'>
+        <div class='row'>
+            <div class='form-group col-xs-5 col-lg-5'>
+                <label>Age:</label>
+                <input type="number" name="age" class='form-control' required>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='form-group col-xs-5 col-lg-5'>
+                <label>Blood Pressure(Diastolic):</label>
+                <input type="number" name="bp" class='form-control' required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-5 col-lg-5">
+                <label>Specific Gravity</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="sg">
+                  <option>1.005</option>
+                  <option>1.010</option>
+                  <option>1.015</option>
+                  <option>1.020</option>
+                  <option>1.025</option>
+                </select>
+              </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-5 col-lg-5">
+                <label>Albumin</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="al">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-5 col-lg-5">
+                <label>Sugar</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="su">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-5 col-lg-5">
+                <label>Red Blood Cells</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="rbc">
+                  <option>normal</option>
+                  <option>abnormal</option>
+                </select>
+              </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-5 col-lg-5">
+                <label>Pus Cell</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="pc">
+                  <option>normal</option>
+                  <option>abnormal</option>
+                </select>
+              </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-5 col-lg-5">
+                <label>Pus Cell Clumbs</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="pcc">
+                  <option>present</option>
+                  <option>notpresent</option>
+                </select>
+              </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-5 col-lg-5">
+                <label>Bacteria</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="ba">
+                  <option>present</option>
+                  <option>notpresent</option>
+                </select>
+              </div>
+        </div>
+        <div class='row'>
+            <div class='form-group col-xs-5 col-lg-5'>
+                <label>Blood Glucose Random:</label>
+                <input type="number" name="bgr" class='form-control' required>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='form-group col-xs-5 col-lg-5'>
+                <label>Blood Urea:</label>
+                <input type="number" name="bu" class='form-control' required>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='form-group col-xs-5 col-lg-5'>
+                <label>Serum Creatinine:</label>
+                <input type="number" step="any" name="sc" class='form-control' required>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='form-group col-xs-5 col-lg-5'>
+                <label>Sodium:</label>
+                <input type="number" name="sod" class='form-control' required>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='form-group col-xs-5 col-lg-5'>
+                <label>Potassium:</label>
+                <input type="number" step="any" name="pot" class='form-control' required>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='form-group col-xs-5 col-lg-5'>
+                <label>Haemoglobin:</label>
+                <input type="number" step="any" name="hemo" class='form-control' required>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='form-group col-xs-5 col-lg-5'>
+                <label>Packed  Cell Volume:</label>
+                <input type="number" name="pcv" class='form-control' required>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='form-group col-xs-5 col-lg-5'>
+                <label>White Blood Cell Count:</label>
+                <input type="number" name="wc" class='form-control' required>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='form-group col-xs-5 col-lg-5'>
+                <label>Red Blood Cell Count:</label>
+                <input type="number" step="any" name="rc" class='form-control' required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-5 col-lg-5">
+                <label>Hypertension</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="htn">
+                  <option>yes</option>
+                  <option>no</option>
+                </select>
+              </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-5 col-lg-5">
+                <label>Diabetes Mellitus</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="dm">
+                  <option>yes</option>
+                  <option>no</option>
+                </select>
+              </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-5 col-lg-5">
+                <label>Coronary Artery Disease</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="cad">
+                  <option>yes</option>
+                  <option>no</option>
+                </select>
+              </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-5 col-lg-5">
+                <label>Appetite</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="appet">
+                  <option>good</option>
+                  <option>poor</option>
+                </select>
+              </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-5 col-lg-5">
+                <label>Pedal Edema</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="pe">
+                  <option>yes</option>
+                  <option>no</option>
+                </select>
+              </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-5 col-lg-5">
+                <label>Anemia</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="ane">
+                  <option>yes</option>
+                  <option>no</option>
+                </select>
+              </div>
+        </div>
+        <div class='row'>
+            <div class='form-group col-xs-5 col-lg-5'>
+            <input type="submit" name="submit" value="Predict" class= 'btn btn-outline-primary btn-sm'>
+            </div>
+        </div>
+    </form>
+</div>
+
+<style>
+    .btn {
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        background-color: white;
+    }
+    .row {
+        justify-content: center;
+    }
+    body {
+        background: linear-gradient(to right, #21cbff, #5b95ff, #21cbff);
+    }
+</style>
+
+
+{% endblock %}

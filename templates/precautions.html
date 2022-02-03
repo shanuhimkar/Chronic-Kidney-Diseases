@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <title>Chronic Kidney Diseases</title>
+    <link rel="icon" href="{{url_for('static', filename='images/logo.png')}}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg navbar-dark fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_Navbar">
+            <span class="fas fa-angle-double-right naw"></span>
+        </button>
+
+        <a href="{{ url_for('home') }}">
+            <img src="{{url_for('static', filename='images/nav_logo.png')}}" class="logo">
+        </a>
+        <div class="collapse navbar-collapse" id="collapse_Navbar">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('home') }}"
+                        style="color: aliceblue; font-size: 20px; font-family: fantasy;">Home</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('model') }}"
+                        style="color: aliceblue; font-size: 20px; font-family: fantasy;">Model</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('precautions') }}"
+                        style="color: aliceblue; font-size: 20px; font-family: fantasy;">Precautions</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('form') }}"
+                        style="color: aliceblue; font-size: 20px; font-family: fantasy;">Predict</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('download') }}"
+                        style="color: aliceblue; font-size: 20px; font-family: fantasy;">Download <i
+                            class="fas fa-download"></i></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h2>Preventing Chronic Kidney Disease</h2>
+        <p>You are more likely to develop kidney disease if you have</p>
+        <ul id="a">
+            <li>diabetes</li>
+            <li>blood pressure</li>
+            <li>heart disease</li>
+            <li>family history of kidney failure</li>
+        </ul>
+
+        <h3>What can I do to keep my kidneys healthy?</h3>
+
+        <p>You can protect your kidneys by preventing or managing health conditions that cause kidney damage, such as
+            diabetes and high blood pressure. The steps described below may help keep your whole body healthy, including
+            your kidneys.</p>
+        <p>During your next medical visit, you may want to ask your health care provider about your kidney health. Early
+            kidney disease may not have any symptoms, so getting tested may be the only way to know your kidneys are
+            healthy. Your health care provider will help decide how often you should be tested.</p>
+        <p>See a provider right away if you develop a urinary tract infection (UTI), which can cause kidney damage if
+            left untreated.</p>
+
+        <h3>Tips for making healthy food choices : </h3>
+        <ul id="a">
+            <li>Cook with a mix of spices instead of salt.</li>
+            <li>Choose veggie toppings such as spinach, broccoli, and peppers for your pizza.</li>
+            <li>Try baking or broiling meat, chicken, and fish instead of frying.</li>
+            <li>Serve foods without gravy or added fats.</li>
+            <li>Try to choose foods with little or no added sugar.</li>
+            <li>Gradually work your way down from whole milk to 2 percent milk until you’re drinking and cooking with
+                fat-free (skim) or low-fat milk and milk products.</li>
+            <li>Eat foods made from whole grains—such as whole wheat, brown rice, oats, and whole-grain corn—every day.
+                Use whole-grain bread for toast and sandwiches; substitute brown rice for white rice for home-cooked
+                meals and when dining out.</li>
+            <li>Read food labels. Choose foods low in saturated fats, trans fats, cholesterol, salt (sodium), and added
+                sugars.</li>
+            <li>Slow down at snack time. Eating a bag of low-fat popcorn takes longer than eating a slice of cake. Peel
+                and eat an orange instead of drinking orange juice.</li>
+            <li>Try keeping a written record of what you eat for a week. It can help you see when you tend to overeat or
+                eat foods high in fat or calories.</li>
+        </ul>
+
+        <h3>Get enough sleep</h3>
+        <p>Aim for 7 to 8 hours of sleep each night.</p>
+
+        <h3>Stop smoking</h3>
+        <p>If you smoke or use other tobacco products, stop. Ask for help so you don’t have to do it alone.</p>
+
+        <h3>Limit alcohol intake</h3>
+        <p>Drinking too much alcohol can increase your blood pressure and add extra calories, which can lead to weight
+            gain. If you drink alcohol External link, limit yourself to one drink per day if you are a woman and two
+            drinks per day if you are a man. One drink is:</p>
+        <ul id="a">
+            <li>12 ounces of beer</li>
+            <li>5 ounces of wine</li>
+            <li>1.5 ounces of liquor</li>
+        </ul>
+
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

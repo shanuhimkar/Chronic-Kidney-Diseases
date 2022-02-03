@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class='container'>
+    <table class='table table-bordered'>
+        <h2>Result</h2>
+        <tr>
+            <th>Prediction</th>
+        </tr>
+        <tr>
+            <td>{{ pred }}</td>
+        </tr>
+    </table>
+</div>
+
+<style>
+    h2 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #035AFA;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+th {
+    border: #035AFA;
+}
+
+tr {
+    border: 2px solid #035AFA;
+    text-align: center;
+}
+
+td {
+    color: black;
+}
+</style>
+
+{% endblock %}

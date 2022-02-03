@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.bg {
+    background-color: #035AFA;
+}
+.navbar-expand-md {
+    text-align: center;
+}
+a:hover {
+    background-color: #1F03FA;
+    text-shadow: grey;
+}
+.logo {
+    width: 100px;
+    height: 46px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+#first {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #035AFA;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+    margin-top: 30px;
+    color: #035AFA;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+
+/* .adi {
+    background: linear-gradient(to right, #21cbff, #5b95ff, #21cbff);
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+h1,h3 {
+    color: #1F03FA
+}
+
+
+.card {
+    margin:15px;
+    padding: 3px;
+    text-align: center;
+    display: inline-block;
+}       
+
+.card h6 {
+    color: #035AFA;
+}
+
+
+
+.btn {
+    text-align: center;
+    padding: 20px;
+}
+
+.btn a {
+    text-align: center;
+    color: #035AFA;
+    border: 2px solid #035AFA;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn a:hover {
+    background-color: #035AFA;
+    color: white;
+    text-decoration: none;
+}
